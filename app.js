@@ -47,7 +47,33 @@ var fruits = [
     image:
       "https://thumbs.dreamstime.com/b/guava-white-background-135749515.jpg",
   },
+  {
+    name: "Banana",
+    desc: "Bananas can boost your heart health, digestion, diabetes management, weight control, and more.",
+    image:
+      "https://th.bing.com/th/id/OIP._IAzDqkmlHRW7rygoqXZagHaHa?w=600&h=600&rs=1&pid=ImgDetMain",
+  },
+  {
+    name: "kiwi",
+    desc: "Kiwis are nutritious fruits that are high in vitamin C, fiber, and plant compounds with antioxidant and anti-inflammatory effects",
+    image:
+      "https://th.bing.com/th/id/OIP.Go8YNQjh4LJaB0bek8C4DQHaHa?rs=1&pid=ImgDetMain",
+  },
+
+  {
+    name: "Muskmelon",
+    desc:"Muskmelon is a super fruit that is rich in water, vitamin C, potassium and folate. It helps in weight loss, diabetes, hypertension, vision, immunity, skin, hair",
+    image:
+      "https://static.toiimg.com/photo/78075710.cms",
+  },
+  {
+    name: "Papaya",
+    desc: "Papaya has many benefits, including protection against heart disease, reduced inflammation, aid in digestion, and boosting your immune system.",
+    image:
+      "https://thumbs.dreamstime.com/b/papaya-isolated-white-background-29901233.jpg",
+  },
 ];
+
 
 var display_box = document.getElementById("display_box"); //getting display box 
 
@@ -61,8 +87,8 @@ fruits.forEach(function (data, ind) {
 <div class="rounded overflow-hidden shadow-lg card_size ">
 <img class=" text-center img-size" src="${data.image}" alt="Mountain">
 <div class="px-6 py-4">
-  <div class="font-bold text-lg mb-2">${data.name}</div>
-  <p class=" text-base">${data.desc}</p>
+  <div class="font-bold text-lg mb-2">${data.name.toUpperCase()}</div>
+    <p class=" text-base" style=" font-size: 15px;">${data.desc}</p>
 </div>
 <div class="px-6 pt-4 pb-2">
 <button class="bg-gray-300 hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded" onclick="update(this)">
